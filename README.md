@@ -1,1 +1,1 @@
-# recupera-ao-algoritimo.c
+# recuperacao-algoritimo.c
