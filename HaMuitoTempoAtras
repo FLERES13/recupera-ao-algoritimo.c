@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    while (N--) {
+        int anos_transcorridos;
+        scanf("%d", &anos_transcorridos);
+
+        int ano;
+        if (anos_transcorridos == 0) {
+            ano = 2015;
+        } else if (anos_transcorridos > 0) {
+            ano = 2015 - anos_transcorridos;
+        } else {
+            ano = 2016 - anos_transcorridos;
+        }
+
+        if (ano <= 0) {
+            printf("%d A.C.\n", -ano + 1);
+        } else {
+            printf("%d D.C.\n", ano);
+        }
+    }
+
+    return 0;
+}
+ 
